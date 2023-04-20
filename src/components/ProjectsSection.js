@@ -5,28 +5,25 @@ import Card from "./Card";
 
 const projects = [
   {
-    title: "React Space",
+    title: "Little Lemon Project",
     description:
-      "Handy tool belt to create amazing AR components in a React app, with redux integration via middleware️",
+      "This is a responsive front-end website for a restaurant called Little Lemon, which was developed as a project for the Coursera Meta Front-End Developer Course.",
     getImageSrc: () => require("../images/photo1.jpg"),
+    link: 'https://comforting-twilight-1e7802.netlify.app/',
   },
   {
-    title: "React Infinite Scroll",
+    title: "Flutter Chat Application",
     description:
-      "A scrollable bottom sheet with virtualisation support, native animations at 60 FPS and fully implemented in JS land 🔥️",
+      "This application was built using the Flutter framework and programmed using the Dart programming language. The backend was implemented using Firebase.",
     getImageSrc: () => require("../images/photo2.jpg"),
+    link: 'https://github.com/priscillaam/Flutter-Chat-Application.git',
   },
   {
-    title: "Photo Gallery",
+    title: "Pinterest Clone",
     description:
-      "A One-stop shop for photographers to share and monetize their photos, allowing them to have a second source of income",
+      "his project is a clone of Pinterest, recreated using React and styled components. It imports stock photos from Unsplash API to fill out the pins and has several functional navigation buttons and selectors.",
     getImageSrc: () => require("../images/photo3.jpg"),
-  },
-  {
-    title: "Event planner",
-    description:
-      "A mobile application for leisure seekers to discover unique events and activities in their city with a few taps",
-    getImageSrc: () => require("../images/photo4.jpg"),
+    link: 'https://eloquent-khapse-4f2cc4.netlify.app/'
   },
 ];
 
@@ -53,6 +50,7 @@ const ProjectsSection = () => {
             title={project.title}
             description={project.description}
             imageSrc={project.getImageSrc()}
+            linkUrl={project.link}
           />
         ))}
       </Box>
