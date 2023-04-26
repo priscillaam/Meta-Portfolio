@@ -14,9 +14,18 @@ const Card = ({ title, description, imageSrc, linkUrl }) => {
     
 
   return (
-    <HStack spacing='24px' padding='1px'>
-    <Box bg='white' rounded="lg" overflow="hidden">
-      <Image src={imageSrc} alt='project-image' />
+    <HStack spacing='24px' padding='1px' justifyContent="center"
+    alignItems="center">
+    <Box  overflow="hidden" 
+      width={{ base: '85%', md: "90%", lg: '95%', xl: '100%' }}
+      minHeight={{ base: "325px", md: "450px", lg: "550px", xl:"385px"}}
+    style={{
+        backgroundImage:
+          `url(${imageSrc})`,
+        filter: "brightness(80%)",
+        zIndex: 0,
+        backgroundSize: 'cover',
+      }}>
       <Heading size='md' margin='12px' color = "black">
         {title}
       </Heading>

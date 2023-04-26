@@ -1,33 +1,44 @@
 import React from "react";
 import { Avatar, Heading, VStack } from "@chakra-ui/react";
 import FullScreenSection from "./FullScreenSection";
+import AvatarPhoto from "../images/profile_picture.png"
 
-const greeting = "Hello, I am Priscilla!";
-const bio1 = "A frontend developer";
-const bio2 = "specialised in React";
+const greeting = "I'm not sure what to put here";
+const bio1 = "Frontend developer.";
 
-// Implement the UI for the LandingSection component according to the instructions.
-// Use a combination of Avatar, Heading and VStack components.
 const LandingSection = () => (
   <FullScreenSection
     justifyContent="center"
     alignItems="center"
-    isDarkBackground
-    backgroundColor="#2A4365"
+    w="100%"
+    h="100%"
   >
-    <VStack>
-      <Avatar size='xl' name='pete' src='data:image/jpeg;base64,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' />
-      <Heading as='h6' size='xs'>
+    <div
+      style={{
+        backgroundImage:
+          "url('https://images.unsplash.com/photo-1601379329542-31c59347e2b8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80')",
+        filter: "brightness(80%)",
+        width: "100%",
+        height: "100vh",
+        position: "absolute",
+        zIndex: 0,
+        backgroundSize: 'cover',
+        backgroundAttachment: 'fixed'
+      }}
+    />
+    <VStack zIndex={1}>
+      <Heading color="white" as="h2" size="xl" noOfLines={1}>
+        {bio1}
+      </Heading>
+      <Heading as="h6" size="xs">
         {greeting}
       </Heading>
     </VStack>
+    <br />
+    <br />
+    <br />
     <VStack>
-      <Heading as='h2' size='xl' noOfLines={1}>
-        {bio1}
-      </Heading>
-      <Heading as='h2' size='xl'>
-        {bio2}
-      </Heading>
+      <Avatar size="2xl" name="priscilla" src={AvatarPhoto} />
     </VStack>
   </FullScreenSection>
 );

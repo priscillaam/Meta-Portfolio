@@ -6,14 +6,16 @@ import ContactMeSection from "./components/ContactMeSection";
 import Footer from "./components/Footer";
 import { AlertProvider } from "./context/alertContext";
 import Alert from "./components/Alert";
+import "@fontsource/martel-sans"
+import theme from './fonts/Theme.js';
 
 function App() {
   return (
-    <ChakraProvider>
+    <ChakraProvider theme={theme} >
       <AlertProvider>
-        <main>
+        <main >
           <Header />
-          <LandingSection />
+          <LandingSection w='100%'/>
           <ProjectsSection />
           <ContactMeSection />
           <Footer />
