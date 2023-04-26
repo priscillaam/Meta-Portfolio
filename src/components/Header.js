@@ -8,7 +8,6 @@ import { Box, HStack, Text, Show, Hide, Icon, useDisclosure,
   ListItem, } from '@chakra-ui/react';
 import { CiMenuFries } from 'react-icons/ci';
 import { TfiClose } from 'react-icons/tfi';
-import "@fontsource/kumbh-sans"
 
 const Header = () => {
   const handleClick = (anchor) => () => {
@@ -37,7 +36,6 @@ const Header = () => {
       transitionTimingFunction="ease-in-out"
       backgroundColor="#f5f5f7"
       zIndex={2}
-      fontFamily="Kumbh Sans"
     >
       <Box color="black" maxWidth="1280px" margin="0 auto">
         <HStack
