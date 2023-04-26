@@ -22,7 +22,7 @@ const projects = [
     title: "Pinterest Clone",
     description:
       "his project is a clone of Pinterest, recreated using React and styled components. It imports stock photos from Unsplash API to fill out the pins and has several functional navigation buttons and selectors.",
-    getImageSrc: () => require("../images/photo3.jpg"),
+    getImageSrc: () => require('../images/pinterest_snap.PNG'),
     link: 'https://eloquent-khapse-4f2cc4.netlify.app/'
   },
 ];
