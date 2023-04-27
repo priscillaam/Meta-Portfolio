@@ -10,8 +10,6 @@ const LandingSection = () => (
   <FullScreenSection
     justifyContent="center"
     alignItems="center"
-    w="100%"
-    h="100%"
   >
     <div
       style={{
@@ -28,7 +26,7 @@ const LandingSection = () => (
       }}
     />
     <VStack zIndex={1}>
-      <Heading color="white" as="h2" size="xl" noOfLines={1}>
+      <Heading color="white" as="h2" size="xl" noOfLines={1} >
         {bio1}
       </Heading>
       <Heading as="h6" size="xs">

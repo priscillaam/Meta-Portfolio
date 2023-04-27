@@ -69,8 +69,8 @@ const LandingSection = () => {
     <FullScreenSection
       isDarkBackground
       backgroundColor="#f5f5f7"
-      py={12}
-      spacing={16}
+      py={20}
+      spacing={14}
     >
                  <div
       style={{
@@ -86,7 +86,11 @@ const LandingSection = () => {
         backgroundPosition: 'top',
       }}
     />
-      <VStack w="100%" p={12} alignItems="flex-start" zIndex={1} backgroundColor='#4d492e' opacity={0.8}>
+      <VStack width={
+      {base: '75%', // 0-30em
+      sm: '85%', // 30em-48em
+      md: '95%', // 48em-62em
+      lg: '100%'}} p={12} alignItems="flex-start" zIndex={1} backgroundColor='#4d492e' opacity={0.8}>
         <Heading as="h1" id="contactme-section">
           Contact me
         </Heading>
@@ -95,7 +99,7 @@ const LandingSection = () => {
             formik.handleSubmit();
             e.preventDefault()
           }}>
-            <VStack spacing={4}>
+            <VStack spacing={2}>
               <FormControl isInvalid={selectedName}>
                 <FormLabel htmlFor="firstName">Name</FormLabel>
                 <Input

@@ -42,7 +42,7 @@ const Card = ({ title, description, imageSrc, linkUrl, viewText }) => {
           <Text margin='12px' color='white' zIndex={1} textAlign='center'>
             {description}
             </Text>
-            <Button margin='12px' height='60px' width='45%' color='#C6BEB1' variant='outline' zIndex={1} textAlign='center' fontWeight='400' fontSize='sm'>
+            <Button margin='12px' height='60px' width={{base: '65%', sm: '45%', md:'35%'}} color='#C6BEB1' variant='outline' zIndex={1} textAlign='center' fontWeight='400' fontSize='sm' paddingLeft={10} paddingRight={10}>
             <a href={linkUrl} color='#C6BEB1'>View {viewText}</a>
             </Button>
           </Box>

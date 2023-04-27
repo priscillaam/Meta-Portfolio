@@ -11,9 +11,9 @@ function App() {
   return (
     <ChakraProvider>
       <AlertProvider>
-        <main >
+        <main overflowX="hidden">
           <Header />
-          <LandingSection w='100%'/>
+          <LandingSection />
           <ProjectsSection />
           <ContactMeSection />
           <Footer />

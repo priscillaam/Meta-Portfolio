@@ -36,8 +36,9 @@ const Header = () => {
       transitionTimingFunction="ease-in-out"
       backgroundColor="#f5f5f7"
       zIndex={2}
+      width='100%'
     >
-      <Box color="black" maxWidth="1280px" margin="0 auto">
+      <Box color="black" margin="0 auto">
         <HStack
           px={16}
           py={4}
