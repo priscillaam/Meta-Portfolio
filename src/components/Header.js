@@ -46,7 +46,7 @@ const Header = () => {
         >
           <Hide breakpoint='(max-width: 768px)'>
           <nav>
-            <Text fontFamily="Kumbh Sans" fontSize={{md: '32px', lg: '34px' }}>priscilla adriana</Text>
+            <Text fontSize={{md: '32px', lg: '34px' }}>priscilla adriana</Text>
           </nav>
           
           <nav>
@@ -81,7 +81,7 @@ const Header = () => {
                   </HStack>
                 </DrawerHeader>
                 <DrawerBody>
-                <List spacing={3}  fontFamily="Kumbh Sans" fontWeight='200' fontSize='4xl'>
+                <List spacing={3} fontWeight='200' fontSize='4xl'>
                   <ListItem>
                     Home
                   </ListItem>

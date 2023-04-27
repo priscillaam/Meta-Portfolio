@@ -1,5 +1,5 @@
 import React from "react";
-import { Avatar, Heading, VStack } from "@chakra-ui/react";
+import { Avatar, Heading, VStack, background } from "@chakra-ui/react";
 import FullScreenSection from "./FullScreenSection";
 import AvatarPhoto from "../images/profile_picture.png"
 
@@ -23,7 +23,8 @@ const LandingSection = () => (
         position: "absolute",
         zIndex: 0,
         backgroundSize: 'cover',
-        backgroundAttachment: 'fixed'
+        backgroundAttachment: 'fixed',
+        backgroundPosition: 'bottom',
       }}
     />
     <VStack zIndex={1}>

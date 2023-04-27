@@ -67,12 +67,26 @@ const LandingSection = () => {
 
   return (
     <FullScreenSection
-      isLightBackground
+      isDarkBackground
       backgroundColor="#f5f5f7"
       py={16}
       spacing={8}
     >
-      <VStack w="100%" p={32} alignItems="flex-start">
+                 <div
+      style={{
+        backgroundImage:
+          "url('https://images.unsplash.com/photo-1601379329542-31c59347e2b8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80')",
+        filter: "brightness(80%)",
+        width: "100%",
+        height: "100vh",
+        position: "absolute",
+        zIndex: 0,
+        backgroundSize: 'cover',
+        backgroundAttachment: 'fixed',
+        backgroundPosition: 'top',
+      }}
+    />
+      <VStack w="100%" p={12} alignItems="flex-start" zIndex={1} backgroundColor='#4d492e' opacity={0.85}>
         <Heading as="h1" id="contactme-section">
           Contact me
         </Heading>
@@ -118,7 +132,7 @@ const LandingSection = () => {
                 <Textarea
                   id="comment"
                   name="comment"
-                  height={250}
+                  height={200}
                   onClick={handleCommentClick}
                   {...formik.getFieldProps('comment')}
                 />
