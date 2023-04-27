@@ -33,6 +33,7 @@ const projects = [
 const ProjectsSection = () => {
   return (
     <FullScreenSection
+      id='projects'
       backgroundColor="#f5f5f7"
       isLightBackground
       p={8}

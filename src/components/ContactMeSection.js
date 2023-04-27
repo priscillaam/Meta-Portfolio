@@ -90,8 +90,8 @@ const LandingSection = () => {
       {base: '75%', // 0-30em
       sm: '85%', // 30em-48em
       md: '95%', // 48em-62em
-      lg: '100%'}} p={12} alignItems="flex-start" zIndex={1} backgroundColor='#4d492e' opacity={0.8}>
-        <Heading as="h1" id="contactme-section">
+      lg: '100%'}} p={12} alignItems="flex-start" zIndex={1} backgroundColor='#4d492e' opacity={0.8} id="contactme">
+        <Heading as="h1">
           Contact me
         </Heading>
         <Box p={6} rounded="md" w="100%">

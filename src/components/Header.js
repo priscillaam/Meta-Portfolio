@@ -8,21 +8,42 @@ import { Box, HStack, Text, Show, Hide, Icon, useDisclosure,
   ListItem, } from '@chakra-ui/react';
 import { CiMenuFries } from 'react-icons/ci';
 import { TfiClose } from 'react-icons/tfi';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import {
+  faGithub,
+  faLinkedin,
+  faMedium,
+  faStackOverflow,
+} from "@fortawesome/free-brands-svg-icons";
+
+
 
 const Header = () => {
-  const handleClick = (anchor) => () => {
-    const id = `${anchor}-section`;
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-      });
-    }
-  };
-  
   const { isOpen, onOpen, onClose } = useDisclosure();
 
+  const socials = [
+    {
+      icon: faEnvelope,
+      url: "mailto: hello@example.com",
+    },
+    {
+      icon: faGithub,
+      url: "https://github.com/priscillaam",
+    },
+    {
+      icon: faLinkedin,
+      url: "https://www.linkedin.com/in/priscillaamartinez/",
+    },
+    {
+      icon: faMedium,
+      url: "https://medium.com",
+    },
+    {
+      icon: faStackOverflow,
+      url: "https://stackoverflow.com",
+    },
+  ];
 
   return (
     <Box
@@ -53,8 +74,8 @@ const Header = () => {
           <nav>
             <HStack spacing={8}>
               {/* Add links to Projects and Contact me section */}
-              <a  href="/#projects" onClick={handleClick('projects')} >Projects</a>
-              <a  href="/#contactme" onClick={handleClick('contactme')}>Contact</a>
+              <a  href="#projects" >Projects</a>
+              <a  href="#contactme" >Contact</a>
             </HStack>
           </nav>
           </Hide>
@@ -84,16 +105,20 @@ const Header = () => {
                 <DrawerBody>
                 <List spacing={3} fontWeight='200' fontSize='4xl'>
                   <ListItem>
-                    Home
+                  <a  href="/" >Home</a>
                   </ListItem>
                   <ListItem>
-                    Projects
+                  <a  href="#projects"  >Projects</a>
                   </ListItem>
                   <ListItem>
-                    Contact
+                  <a  href="#contactme" >Contact Me</a>
                   </ListItem>
                   <ListItem>
-                    My Links
+                  {
+                Object.keys(socials).map((key, i) => {
+                  return (<a href={socials[key].url} key={socials[key].url} target="_blank" style={{ marginRight: "10px" }}><FontAwesomeIcon icon={socials[key].icon} size="md" /></a>)
+                }) 
+              }
                   </ListItem>
                 </List>
                 </DrawerBody>

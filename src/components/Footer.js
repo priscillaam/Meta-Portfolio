@@ -17,11 +17,11 @@ const Footer = () => {
     },
     {
       icon: faGithub,
-      url: "https://github.com",
+      url: "https://github.com/priscillaam",
     },
     {
       icon: faLinkedin,
-      url: "https://www.linkedin.com",
+      url: "https://www.linkedin.com/in/priscillaamartinez/",
     },
     {
       icon: faMedium,
@@ -48,7 +48,7 @@ const Footer = () => {
           <HStack paddingLeft={2}> 
             {
                 Object.keys(socials).map((key, i) => {
-                  return (<a href={socials[key].url} key={socials[key].url}><FontAwesomeIcon icon={socials[key].icon} size="md" /></a>)
+                  return (<a href={socials[key].url} key={socials[key].url} target="_blank"><FontAwesomeIcon icon={socials[key].icon} size="md" /></a>)
                 }) 
               }
             </HStack>

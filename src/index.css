@@ -9,6 +9,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
 }
 
 html {
@@ -16,6 +17,7 @@ html {
   padding: 0;
   background-color: #f5f5f7;
   min-width: 550px;
+  scroll-behavior: smooth;
 }
 
 code {
