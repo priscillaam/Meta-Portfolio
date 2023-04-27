@@ -3,7 +3,7 @@ import { Avatar, Heading, VStack, background } from "@chakra-ui/react";
 import FullScreenSection from "./FullScreenSection";
 import AvatarPhoto from "../images/profile_picture.png"
 
-const greeting = "I'm not sure what to put here";
+const greeting = "I’m Priscilla! I’m passionate about creating user interfaces and experiences for web applications.";
 const bio1 = "Frontend developer.";
 
 const LandingSection = () => (
@@ -26,10 +26,10 @@ const LandingSection = () => (
       }}
     />
     <VStack zIndex={1}>
-      <Heading color="white" as="h2" size="xl" noOfLines={1} >
+      <Heading color="white" as="h2" size="2xl" noOfLines={1} >
         {bio1}
       </Heading>
-      <Heading as="h6" size="xs">
+      <Heading as="h6" size="sm"  color='#5c6347' textAlign='center' width='65%'>
         {greeting}
       </Heading>
     </VStack>

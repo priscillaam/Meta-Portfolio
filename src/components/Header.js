@@ -59,7 +59,7 @@ const Header = () => {
       zIndex={2}
       width='100%'
     >
-      <Box color="black" margin="0 auto">
+      <Box color="#5c6347" margin="0 auto">
         <HStack
           px={16}
           py={4}

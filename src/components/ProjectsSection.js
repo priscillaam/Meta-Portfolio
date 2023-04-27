@@ -40,7 +40,7 @@ const ProjectsSection = () => {
       spacing={8}
       width={{sm: '100%', md: '95%', lg: '90%', xl: '85%'}}
     >
-      <Text fontWeight='200' fontSize='4xl'>
+      <Text fontWeight='200' fontSize='4xl' color='#5c6347'>
         Featured Projects
       </Text>
       <Grid

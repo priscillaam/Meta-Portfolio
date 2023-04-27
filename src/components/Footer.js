@@ -37,7 +37,7 @@ const Footer = () => {
     <Box backgroundColor="#f5f5f7" style={{ position: 'relative', zIndex: "1" }} overflowX="hidden">
       <footer style={{ position: "relative", width: "100%" }}>
         <Flex
-          color="black"
+          color="#071f05"
           justifyContent="center"
           alignItems="center"
           minHeight={16}
