@@ -34,7 +34,7 @@ const Footer = () => {
   ];
   
   return (
-    <Box backgroundColor="#f5f5f7">
+    <Box backgroundColor="#f5f5f7" style={{ position: "relative", zIndex: "1" }}>
       <footer>
         <Flex
           margin="0 auto"
@@ -43,7 +43,7 @@ const Footer = () => {
           justifyContent="center"
           alignItems="center"
           maxWidth="1024px"
-          height={16}
+          minHeight={16}
         >
           <Text>Priscilla Adriana • © 2023 • </Text>
           <HStack paddingLeft={2}> 
