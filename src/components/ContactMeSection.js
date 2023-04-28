@@ -120,23 +120,13 @@ const LandingSection = () => {
                   {...formik.getFieldProps('email')}
                 />
                 {selectedEmail && <FormErrorMessage>Email is required</FormErrorMessage>}
-              </FormControl>
-              <FormControl>
-                <FormLabel htmlFor="type">Type of enquiry</FormLabel>
-                <Select id="type" name="type" {...formik.getFieldProps('type')}>
-                  <option value="hireMe">Freelance project proposal</option>
-                  <option value="openSource">
-                    Open source consultancy session
-                  </option>
-                  <option value="other">Other</option>
-                </Select>
-              </FormControl>
+              </FormControl>s
               <FormControl isInvalid={selectedComment}>
                 <FormLabel htmlFor="comment">Your message</FormLabel>
                 <Textarea
                   id="comment"
                   name="comment"
-                  height={200}
+                  height={100}
                   onClick={handleCommentClick}
                   {...formik.getFieldProps('comment')}
                 />
