@@ -34,8 +34,15 @@ const Footer = () => {
   ];
   
   return (
-    <Box backgroundColor="#f5f5f7" style={{ position: 'relative', zIndex: "1" }} overflowX="hidden">
-      <footer style={{ position: "relative", width: "100%" }}>
+    <Box backgroundColor="#f5f5f7" 
+    style={{position: "relative", zIndex: "1" }} 
+    overflowX="hidden">
+      <footer
+      style={{
+
+          width: "100%",
+
+        }}>
         <Flex
           color="#071f05"
           justifyContent="center"
@@ -43,6 +50,7 @@ const Footer = () => {
           minHeight={16}
           paddingX={12}
           width='100%'
+          style={{ flexGrow: 1 }}
         >
           <Text>Priscilla Adriana • © 2023 • </Text>
           <HStack paddingLeft={2}> 

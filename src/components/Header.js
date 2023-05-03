@@ -108,10 +108,10 @@ const Header = () => {
                   <a  href="/" >Home</a>
                   </ListItem>
                   <ListItem>
-                  <a  href="#projects"  >Projects</a>
+                  <a  href="#projects" onClick={onClose} >Projects</a>
                   </ListItem>
                   <ListItem>
-                  <a  href="#contactme" >Contact Me</a>
+                  <a  href="#contactme" onClick={onClose} >Contact Me</a>
                   </ListItem>
                   <ListItem>
                   {
