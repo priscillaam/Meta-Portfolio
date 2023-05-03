@@ -3,8 +3,8 @@ import { Avatar, Heading, VStack, background } from "@chakra-ui/react";
 import FullScreenSection from "./FullScreenSection";
 import AvatarPhoto from "../images/profile_picture.png"
 
-const greeting = "I’m Priscilla! I’m passionate about creating user interfaces and experiences for web applications.";
-const bio1 = "Frontend developer.";
+const greeting = "Hello, my name is Priscilla! I’m passionate about creating user interfaces and experiences for web applications.";
+const bio1 = "Frontend Developer";
 
 const LandingSection = () => (
   <FullScreenSection
