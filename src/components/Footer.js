@@ -52,7 +52,7 @@ const Footer = () => {
           width='100%'
           style={{ flexGrow: 1 }}
         >
-          <Text>Priscilla Adriana • © 2023 • </Text>
+          <Text>Priscilla Adriana • © 2023   </Text>
           <HStack paddingLeft={2}> 
             {
                 Object.keys(socials).map((key, i) => {
