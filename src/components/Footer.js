@@ -4,9 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import {
   faGithub,
-  faLinkedin,
-  faMedium,
-  faStackOverflow,
+  faLinkedin
 } from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
@@ -22,14 +20,6 @@ const Footer = () => {
     {
       icon: faLinkedin,
       url: "https://www.linkedin.com/in/priscillaamartinez/",
-    },
-    {
-      icon: faMedium,
-      url: "https://medium.com",
-    },
-    {
-      icon: faStackOverflow,
-      url: "https://stackoverflow.com",
     },
   ];
   
